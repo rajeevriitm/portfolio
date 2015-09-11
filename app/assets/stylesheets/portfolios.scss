@@ -1,0 +1,233 @@
+// Place all the styles related to the Portfolios controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(asset-path("background.png"));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  // visibility: hidden;
+  // background-position: 50px 100px;
+}
+
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+
+#nav.affix {
+ position: fixed;
+ top: 0;
+ z-index:10;
+ -webkit-transition: all .6s ease-in-out;
+}
+
+#footer > .container {
+
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+    float:none;
+  }
+}
+
+.navbar-nav {
+  margin: 1px 1px;
+}
+
+/* customize nav style */
+.navbar-custom {
+  background-color: #2e2e2e;
+  font-weight:700;
+  text-transform:uppercase;
+  border-width:0;
+}
+.navbar-custom  .navbar-nav>li>a {
+  color: #ddd;
+}
+.navbar-custom  .dropdown-menu li>a:hover {
+  color: #eee;
+}
+.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+  background-color: #000;
+}
+.navbar-custom .navbar-nav>.dropdown>a .caret {
+  border-top-color: #999;
+  border-bottom-color: #999;
+}
+
+.navbar-collapse.in { /*3.0.2 bug workaround*/
+  overflow-y: visible;
+}
+
+.navbar-toggle {
+  outline:0;
+}
+.descriprion{
+  background: rgba(250, 206, 206, 0.4);
+  text-align: center;
+  margin: 0 40px ;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+h3{
+ font-family: 'Courier New', Courier, monospace;
+ // color: #630F1E;
+ font-size: 40px;
+ text-align: center;
+  // font-weight: bold;
+}
+.name{
+  padding: 20px;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  letter-spacing: 3px;
+  font-size: 55px;
+  font-weight: 500;
+  color: #29276D;
+}
+.abilities{
+  background: rgba(130, 120, 146, 0.7);
+  font-size: 26px;
+  font-family: Georgia, Serif;
+  font-style: italic;
+  margin-top: 30px;
+  line-height: 40px;
+  font-weight: 500;
+}
+.quote{
+  .motto{
+    // color: ;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+  }
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #630F1E;
+}
+figure{
+  position: relative;
+  top: 180px;
+  visibility: visible;
+  img{
+    visibility: hidden;
+  }
+  figcaption{
+    padding: 3px 0;
+    font-weight: 600;
+  }
+  // float: bottom;
+}
+.blue{
+    // background: red;
+    background: rgba(220, 0, 0, 0.5);
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    border-radius: 75px;
+  }
+  .blue_figcaption{
+    text-align: center;
+    color: blue;
+    font-size: 17px;
+    margin-top: -25px;
+  }
+  .red{
+    top: 155px;
+    // background: blue;
+    background: rgba(0,0,200, 0.5);
+    -moz-border-radius: 85px;
+    -webkit-border-radius: 85px;
+    border-radius: 85px;
+  }
+  .red_figcaption{
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    margin-top: -40px;
+  }
+  .choose{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    width: 200px;
+    text-align: left;
+    -webkit-animation-name: choose; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: choose;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes choose {
+    0%   {color:blue; left:0px; }
+    50%  {color:red; left:500px;}
+    100% {color:blue; left:0px;}
+  }
+
+  /* Standard syntax */
+  @keyframes choose {
+    0%   {color:blue; left:0px; }
+    50%  {color:red; left:500px;}
+    100% {color:blue; left:0px; }
+  }
+
+  .blue-anim{
+    position: relative;
+    width: 155px;
+    height: 155px;
+    margin-top: -50px;
+    z-index: +1;
+
+  }
+  .red-anim{
+    z-index: +1;
+    position: relative;
+    margin-top: -60px;
+  }
+
+  .moving_img{
+    -webkit-transition:  -webkit-transform 2s; /* Safari */
+    transition:  transform 500ms;
+
+    &:hover{
+      -webkit-transform: rotate(720deg); /* Safari */
+      transform: rotate(540deg);
+    }
+  }
+  #physics, #web {
+    display: none;
+    a{
+      &:hover{
+        background-color: transparent;
+      }
+    }
+  }
+  .new_caption{
+    text-align: center;
+    color: #9AE7AB;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -10px;
+  }
+  .red_new_caption{
+    text-align: center;
+    color: #9AE7AB;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -10px;
+  }
