@@ -1,0 +1,39 @@
+<%= form_tag('/email',class: "form-horizontal") do %>
+<fieldset>
+  <legend class="text-center contact_header">Contact me</legend>
+  <div class="form-group">
+    <div class="col-md-10 col-md-offset-1">
+
+      <%= text_field_tag :name ,nil,placeholder: "Name", class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-10 col-md-offset-1">
+
+      <%= email_field_tag :email ,nil,placeholder: "Email address", class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-10 col-md-offset-1">
+
+      <%= text_field_tag :subject ,nil,placeholder: "Subject", class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-10 col-md-offset-1">
+
+    <%= text_area_tag :message ,nil,class: "form-control", placeholder:"Enter your massage here. ", rows: "7" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-12 text-center">
+      <%= submit_tag 'Mail me', class: "btn btn-primary"  %>
+    </div>
+  </div>
+</fieldset>
+
+<% end %>
+

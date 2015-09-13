@@ -1,0 +1,41 @@
+
+<div id="imp_features">Important features </div>
+<ul id="feat_lists">
+<li>
+Deployment of website: The websites are deployed on Heroku.rails_12factor gem is used to serve static assets such as
+images and style sheets on Heroku.
+</li><li>
+Database: Postgresql DBMS is used with pg gem.
+</li><li>
+Web-server: Puma is used  as the server which is capable of handling a large number of incoming requests in production.
+</li><li>
+Image uploading to Amazon S3. Carrier wave gem was used to upload images. CarrierWave's MiniMagik interface for ImageMagick
+was used for editing pictured before saving them. It was uploaded to Amazon S3 with the help of fog gem.
+</li><li>
+JQuery and pure javascripts are used extensively to handle Ajax requests and several user-friendly features. Different
+javascript gems like typeahead are also used .
+</li><li>
+Bootstrap is used for the responsive design and for including features like tags-input .
+</li><li>
+development and testing:  Minitest is used with guard for an efficient testing mechanism. live reload is used with
+guard to automatically refresh when files are changed. Byebug is used for debugging.
+</li><li>
+Version Control: Git is used for version control and Github is used to store the changes after each commit.
+</li><li>
+Account activation and Forgot password features through email. SendGrid add-on is used in production for sending account activation link and
+link to update new password.
+
+</li><li>
+bootstrap-tagsinput is included to add ids of thoughts as tags when user clicks "Add thought" button.
+</li><li>
+type-ahead is used to provide search suggestions while typing.  Typeahead receives the JSON data from users list to provide
+search result.
+</li><li>
+jquery-visible is used to resize the ThoughtPad according to the visibility of the post button.
+</li><li>
+bootstrap-will-paginate is used for limiting number of results if a page for thoughts , users, and microposts.
+</li><li>
+jqueryturbolinks: Turbo-links helps to make the web page to load faster. But it affects some existing JQuery codes.
+JQuery-turbolinks gem is used solve this problem.
+</li>
+</ul>

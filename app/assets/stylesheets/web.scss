@@ -1,0 +1,111 @@
+#web_det{
+  background: rgba(122,180,150, 0.5);
+  padding: 25px 50px;
+  .web_title{
+    font-size: 20px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 0 20px 0;
+    color: #27462D;
+  }
+}
+.intro{
+  background: rgba(190,140,150, 0.4);
+  font-size: 17px;
+  line-height: 19px;
+  padding: 20px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  // text-align: center;
+  color: #43211F;
+}
+#div_skills{
+  margin-top: 20px;
+  padding: 10px 5px;
+  background: rgba(180,180,150, 0.5);
+  td{
+    font-size: 16px;
+    padding: 5px;
+    color: #1E1F62;
+  }
+}
+#div_projects{
+  margin-top: 20px;
+  background: rgba(180,180,180, 0.5);
+  padding: 25px;
+  .quickthoughts   { color: #c00;
+    background-color: #D4F0D1;
+    font-family: "Pico Alphabet Font" ;
+    font-size: 1.5em;
+    padding: 5px;
+    border: solid;
+    border-color: #7E3C3C;
+    border-width: 2px;
+  }
+  .settleitnow   { color: #fff;
+    background-color: #000;
+    font-family: "Pico Alphabet Font" ;
+    font-size: 1.5em;
+    padding: 5px;
+    border: solid;
+    border-color: #7E3C3C;
+    border-width: 2px;
+
+  }
+
+  a:hover   { color: #00c ;
+    background-color: transparent;
+    text-decoration: none;}
+    a:active  { color: #ccc }
+    #projects{
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+  .project_list{
+    margin-top: 25px;
+    background: rgba(180,180,180, 0.5);
+    div{
+      padding: 15px;
+      font-size: 16px;
+      color: #111431;
+    }
+  }
+  #div_features{
+    margin-top: 10px;
+    padding: 20px;
+    background: rgba(160,170,180, 0.7);
+  }
+  #imp_features{
+    font-size: 25px;
+    color: #332E6B;
+    font-weight: 500;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif ;
+  }
+  #feat_lists{
+    margin-top: 20px;
+    li{
+      font-size: 16px;
+      line-height: 140%;
+      margin-bottom: 5px;
+      color: #53202B;
+    }
+  }
+  .web_buttons{
+    padding: 3px 5px 10px 5px ;
+    height: 40px;
+    margin: 5px 0  -10px 0;
+    background: rgba(122,140,200,0.5);
+    a{
+
+    color: #762557;
+    font-weight: 700;
+    }
+    span:first-child{
+      float: left;
+    }
+    span:last-child{
+      float: right;
+    }
+  }
