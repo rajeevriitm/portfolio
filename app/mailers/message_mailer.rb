@@ -7,6 +7,6 @@ class MessageMailer < ApplicationMailer
   #
   def send_message(params)
     @email=params
-    mail from: params[:email]
+    mail from: params[:email] , subject: params[:subject]
   end
 end

@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
+  get 'blogs/new'
+
+  get 'blogs/edit'
+
+  get 'blogs/show'
+
+  get 'blogs/index'
+
   root 'portfolios#home'
   get 'web' , to: 'portfolios#web'
   get 'physics' , to: 'portfolios#physics'
   get 'contact' , to: 'portfolios#contact'
   post 'email', to: 'portfolios#email'
+  get 'gallery', to: "portfolios#gallery"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

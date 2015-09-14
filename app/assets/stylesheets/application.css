@@ -10,7 +10,42 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require fancybox
+ *= require_tree .
  *= require font-awesome
  */
+
+ .fancybox-nav {
+  width: 60px;
+}
+
+.fancybox-nav span {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+.fancybox-nav:hover span {
+  opacity: 1;
+}
+
+.fancybox-next {
+  right: -60px;
+}
+
+.fancybox-prev {
+  left: -60px;
+}
+
+.thumbnail{
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  img{
+    margin-bottom: -10px;
+    height: 140px !important;
+  }
+}
+.gallery{
+  margin-top: -30px;
+}

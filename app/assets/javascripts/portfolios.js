@@ -1,5 +1,4 @@
  $(document).ready(function(){
-  // $("figure").hide();
   $(".blue-anim").animate({top: "335px"}, 1500,'easeOutBounce');
   $(".red-anim").animate({top: "320px"}, 1500,'easeOutBounce');
   $('.blue-anim').mouseenter(function(){

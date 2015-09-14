@@ -12,4 +12,6 @@ class PortfoliosController < ApplicationController
     flash[:success]="Your email has been sent..Will get in touch with you soon"
     redirect_to contact_path
   end
+  def gallery
+  end
 end
