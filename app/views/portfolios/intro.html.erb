@@ -1,11 +1,11 @@
 <% provide :title, "Rajeev | Web-developer" %>
 
-<div class="se-pre-con col-md-5 col-md-offset-3"> <%= image_tag( image_url('prel.gif'),width: 300,height: 300) %> </div>
-
 
 <script>
-$.get( '/home', function( data ) {
-  $('se-pre-con').hide();
-  $( "body" ).html( data );
+$('body').waitForImages(function() {
+  $.ajax({url: "/home", success: function(result){
+      $("body").html(result);
+  }});
+
 });
 </script>
