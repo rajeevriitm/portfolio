@@ -1,9 +1,11 @@
-<div class="se-pre-con"></div>
+<% provide :title, "Rajeev | Web-developer" %>
+
+<div class="se-pre-con col-md-5 col-md-offset-3"> <%= image_tag( image_url('prel.gif'),width: 300,height: 300) %> </div>
 
 
 <script>
-$(window).load(function() {
-  // Animate loader off screen
-  $(".se-pre-con").fadeOut("slow");;
+$.get( '/home', function( data ) {
+  $('se-pre-con').hide();
+  $( "body" ).html( data );
 });
 </script>
