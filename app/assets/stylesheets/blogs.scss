@@ -1,3 +1,136 @@
-// Place all the styles related to the Blogs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#masthead {
+  min-height:170px;
+  .lead{
+    font-size: 35px;
+    color:#C71717;
+  }
+}
+
+#masthead h1{
+  font-size: 55px;
+  line-height: 1;
+  margin-top:50px;
+}
+#masthead h2{
+  font-size: 48px;
+  line-height: 1;
+  font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #251E6B;
+  font-style: italic;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 80px;
+  }
+}
+
+
+.btn-twitter {background-color:#4099FF;color:#fff;}
+.btn-facebook {background-color:#3B5998;color:#fff;}
+.btn-google-plus {background-color:#d34836;color:#fff;}
+
+.btn-twitter:hover {background-color:#3088FF;color:#62BBFF;}
+.btn-facebook:hover {background-color:#2A4998;color:#4C6BBA;}
+.btn-google-plus:hover {background-color:#C23836;color:#E45A58;}
+.btn-group{
+  float: right;
+}
+.findme{
+  float: right;
+  color: #25A44C;
+}
+.blog-space{
+  margin-top: -20px;
+  background-color: rgba(250,250,250,0.6);
+  padding: 30px;
+  border: solid;
+  border-width: 5px;
+  border-color: #ccc;
+  h4{
+    padding: 0 20px;
+    font-size: 19px;
+    font-weight: 500;
+    a{
+      color: #1B1C34;
+    }
+  }
+  .blog-content{
+    padding: 20px 30px;
+    background-color: rgba(250,250,250,1);
+    margin: 0 20px;
+    width: 95%;
+    // position: relative;
+    .content-top{
+      position: absolute;
+      top: 0;
+      left: 20px;
+      background-image: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,1) );
+      background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,1) ); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,1) ); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,1) );
+      z-index: 10;
+      height: 120px;
+      width: 95%;
+    }
+    .content{
+      font-size: 17px;
+      font-family: "Times New Roman", Times, serif;
+      line-height: 20px;
+      max-height: 100px;
+      overflow: hidden;
+      // font-weight: 500;
+    }
+  }
+}
+.list-inline{
+  margin-top: 20px;
+  li{
+    color: #428bca;
+  }
+  // margin-top: -20px;
+}
+.comment{
+  background-color: rgba(245,245,245,0.9);
+  display: none;
+  div{
+    padding: 0;
+  }
+}
+.comments-list{
+  width: 150%;
+  .comment-part{
+// padding: 5px ;
+margin-left: 10px;
+margin-bottom: 10px;
+}
+
+}
+#comments{
+  padding: 15px 0 10px 0;
+  text-decoration: underline;
+  font-size: 16px;
+  color: #5C3D1C;
+}
+.comment-name{
+  color: #1E2556;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.comment-content{
+  font-size: 14px;
+}
+.comment-part{
+  background-color: rgba(250,250,250,1);
+  margin-bottom: 5px;
+  div{
+    padding: 5px 0 0 10px;
+  }
+}
+.comment-time{
+      color: #428bca;
+
+}

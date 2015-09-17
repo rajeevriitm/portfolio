@@ -1,0 +1,18 @@
+<div class="comment-part" >
+
+<div class="comment-name">
+<span>
+<%= image_tag asset_path("pro.jpg"),height: 25,width: 25 %>
+</span>
+<span>
+<%= comment.name  %>
+</span>
+</div>
+<div class="comment-content">
+<%= comment.content %>
+</div>
+<div class="comment-time">
+<%= time_of_creation(comment.created_at)  %>
+</div>
+
+</div>

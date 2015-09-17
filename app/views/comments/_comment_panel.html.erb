@@ -1,0 +1,15 @@
+
+<div class="col-md-8">
+<div id="comments">
+Comments ( <%= blog.comments.count  %> )
+</div>
+<div class="comments-list">
+<%= render blog.comments.all  %>
+</div>
+<%= form_for [blog,Comment.new] do |f|  %>
+<div> Add comment </div>
+<%= f.text_field :name, placeholder: "name", class: "form-control input-sm" %>
+<%= f.text_area :content, placeholder: "Post comment" , class: "form-control " ,rows: 2 %>
+<%= f.submit :comment, class: " btn btn-xs btn-primary" %>
+<% end  %>
+</div>

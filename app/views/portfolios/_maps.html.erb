@@ -4,12 +4,18 @@
             <div class="text-center contact_header">Location</div>
             <div class="panel-body text-center">
               <h4>Address</h4>
-              <div>
+              <span>
                 Quilon<br />
                 Kerala<br />
                 +91-9895922310<br />
                 rajeevriitm@gmail.com<br />
-              </div>
+              </span>
+              <span>
+              Tamiraparani Hostel </br>
+                IIT Madras<br />
+                chennai<br />
+                +91-9791132310<br />
+              </span>
               <hr />
               <div id="map1" class="map">
               </div>
@@ -19,13 +25,13 @@
       </div>
 
 
-<script src="http://maps.google.com/maps/api/js">
+<script src="http://maps.google.com/maps/api/js?sensor=false&callback=init_map1">
 </script>
 <script >
 
 
     function init_map1() {
-        var myLocation = new google.maps.LatLng(9.061490, 76.600223);
+        var myLocation = new google.maps.LatLng(12.988383, 80.238278);
         var mapOptions = {
             center: myLocation,
             zoom: 16
@@ -38,5 +44,4 @@
             mapOptions);
         marker.setMap(map);
     }
-    init_map1();
 </script>

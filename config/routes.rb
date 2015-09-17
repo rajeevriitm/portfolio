@@ -1,13 +1,11 @@
 Rails.application.routes.draw do
-  get 'blogs/new'
 
-  get 'blogs/edit'
-
-  get 'blogs/show'
-
-  get 'blogs/index'
+  resources :blogs do
+    resources :comments
+  end
 
   root 'portfolios#home'
+  get 'home', to:'portfolios#home'
   get 'web' , to: 'portfolios#web'
   get 'physics' , to: 'portfolios#physics'
   get 'contact' , to: 'portfolios#contact'
