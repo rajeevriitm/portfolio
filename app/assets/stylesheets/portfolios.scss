@@ -6,15 +6,12 @@
 html,
 body {
   height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
   -webkit-font-smoothing: antialiased;
   font-family: 'Open Sans', sans-serif;
   background-image: url(asset-path("background.jpg"));
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  // visibility: hidden;
-  // background-position: 50px 100px;
 }
 
 .row {
