@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  root 'portfolios#intro'
+  root 'portfolios#home'
   get 'home', to:'portfolios#home'
   get 'web' , to: 'portfolios#web'
   get 'physics' , to: 'portfolios#physics'
