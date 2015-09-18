@@ -1,6 +1,4 @@
 class PortfoliosController < ApplicationController
-  def intro
-  end
   def home
   end
   def web
