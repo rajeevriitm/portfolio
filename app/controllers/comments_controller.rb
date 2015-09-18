@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
       redirect_to :back || bolgs_path
     else
       flash[:danger]="Unable to add your comment"
-      redirect_to home_path
+      redirect_to blogs_path
     end
   end
 end

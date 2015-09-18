@@ -1,4 +1,4 @@
- $(document).ready(function(){
+ var ready= function(){
   $(".blue-anim").animate({top: "335px"}, 1500,'easeOutBounce');
   $(".red-anim").animate({top: "320px"}, 1500,'easeOutBounce');
   $('.blue-anim').mouseenter(function(){
@@ -30,8 +30,7 @@
     });
   });
 
+};
 
-
-});
-
-
+$(document).ready(ready);
+$(document).on('page:load', ready);

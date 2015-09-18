@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   root 'portfolios#home'
   get 'home', to:'portfolios#home'
+  get 'intro', to:'portfolios#intro'
   get 'web' , to: 'portfolios#web'
   get 'physics' , to: 'portfolios#physics'
   get 'contact' , to: 'portfolios#contact'

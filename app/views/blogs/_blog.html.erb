@@ -17,6 +17,10 @@
           <i class="glyphicon glyphicon-comment"></i>
            <%=  pluralize(blog.comments.count , "Comment")  %></button>
           </li>
+          <% if params[:admin] == "raj" %>
+          <li> <%= link_to "edit",edit_blog_path(blog)  %></li>
+          <li> <%= link_to "delete", blog, method: :delete,data:{confirm: "are you sure?"} %></li>
+          <% end %>
         </ul>
       <div class=" col-md-12 comment">
       <%= render 'comments/comment_panel' , blog: blog %>
