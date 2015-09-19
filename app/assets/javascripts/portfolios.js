@@ -1,4 +1,6 @@
- var ready= function(){
+$(document).ready(function(){
+
+
   $(".blue-anim").animate({top: "335px"}, 1500,'easeOutBounce');
   $(".red-anim").animate({top: "320px"}, 1500,'easeOutBounce');
   $('.blue-anim').mouseenter(function(){
@@ -20,7 +22,7 @@
 
     $('.red-anim .moving_img').fadeOut(500, function(){
       $('#web').show();
-      $('.red_figcaption').text("Web-Development").removeClass('red_figcaption').addClass('red_new_caption');
+      $('.red_figcaption').text("Web-developer").removeClass('red_figcaption').addClass('red_new_caption');
     });
   }).mouseleave(function(){
     $('.red-anim .moving_img').stop(false,true);
@@ -30,7 +32,6 @@
     });
   });
 
-};
 
-$(document).ready(ready);
-$(document).on('page:load', ready);
+});
+
