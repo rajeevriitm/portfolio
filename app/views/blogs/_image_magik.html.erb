@@ -1,0 +1,106 @@
+<div>
+Image manipulation is necessary for web designers. It also comes handy for web developers to quickly add some images with desired size and quality.
+In this post I will go through a quick way to edit images using ImageMagick command line tool.
+</div>
+<br/>
+<p>
+First of all, you need to have ImageMagick installed in your system. In Debian based systems (Ubuntu,linux mint) run <br/>
+<p>
+<code>  sudo apt-get install imagemagick </code><br/>
+</p>
+ ImageMagick is also part of standard RedHat-based systems (Fedora, CentOS).
+ <p>
+ <br/>
+<code>  sudo yum install imagemagick </code> <br/>
+</p>
+</p>
+<br/>
+ImageMagick provides a large number of tools for editing images. Here is a short description of some of the command line tools imagemagick
+provides.
+<dl compact="">
+<br/>
+<dt><b>convert</b>
+</dt><dd>
+<p>convert between image formats as well as resize an image, blur, crop, despeckle, dither, draw on, flip, join, re-sample, and much more.
+</p></dd><dt><b>identify</b>
+</dt><dd>
+<p>describes the format and characteristics of one or more image files.
+</p></dd><dt><b>mogrify</b>
+</dt><dd>
+<p>resize an image, blur, crop, despeckle, dither, draw on, flip, join, re-sample, and much more. Mogrify overwrites the original image file, whereas, convert
+writes to a different image file.
+</p></dd><dt><b>composite</b>
+</dt><dd>
+<p>overlaps one image over another.
+</p></dd><dt><b>montage</b>
+</dt><dd>
+<p>create a composite image by combining several separate images. The images are tiled on the composite image optionall adorned with a border, frame, image
+name, and more.
+</p></dd><dt><b>compare</b>
+</dt><dd>
+<p>mathematically and visually annotate the difference between an image and its reconstruction..
+</p></dd><dt><b>stream</b>
+</dt><dd>
+<p>is a lightweight tool to stream one or more pixel components of the image or portion of the image to your choice of storage formats. It writes the pixel
+components as they are read from the input image a row at a time making stream desirable when working with large images or when you require raw pixel
+components.
+</p></dd><dt><b>display</b>
+</dt><dd>
+<p>displays an image or image sequence on any X server.
+</p></dd><dt><b>animate</b>
+</dt><dd>
+<p>animates an image sequence on any X server.
+</p></dd><dt><b>import</b>
+</dt><dd>
+<p>saves any visible window on an X server and outputs it as an image file. You can capture a single window, the entire screen, or any rectangular portion of
+the screen.
+</p></dd><dt><b>conjure</b>
+</dt><dd>
+<p>interprets and executes scripts written in the Magick Scripting Language (MSL).</p></dd></dl>
+<br/>
+Lets resize an image using imagemagick
+<br/>
+<code> convert raj.jpg -resize 200x100 raj_new.jpg </code>
+<br/>
+<p>
+This command would resize the image to height 200px and width 100px. If you give same name as outfile name , the file would be replaced.
+For a web designer , resizing all images to a fixed size would be needed. Especially when you work with galleries. It would be a time consuming
+process to run same command each time for different files.  </p>
+<p>
+Below I have given a simple bash script which I use everytime resize all images
+in a folder. You can skip some images if necessary. All the converted images will be in a new folder named converted. All image name will have
+an 'z' letter appended in the beggining. You can press 2 to convert an image and 3 to skip an image. Here is the script , its self explanatory,
+You can tweak it for your own need.
+</p>
+<br/>
+<code>
+#!/bin/bash <br/>
+out=$(ls) <br/>
+mkdir converted <br/>
+echo "what is the height?" <br/>
+read a <br/>
+echo "what is the width?" <br/>
+read b <br/>
+for i in $out <br/>
+do <br/>
+  echo "resize $i ?" <br/>
+  read yorn <br/>
+  if [ $yorn -eq 2 ] <br/>
+    then <br/>
+    convert $i -resize $a"x"$b converted/z$i <br/>
+    echo " z$i is formed with $a x $b" <br/>
+  elif [ $yorn -eq 3 ] <br/>
+    then <br/>
+    echo "omiited $i" <br/>
+  else <br/>
+    echo "not a valid input" <br/>
+  fi <br/>
+done <br/>
+</code>
+
+<br/>
+Hope it was helpful. You can also use imagemagick in your models. Thats for another post. Here is a link to how to use it with carrier wave gem
+while uploading images. <%= link_to "image magick in carrierwave ", "https://github.com/carrierwaveuploader/carrierwave" %>
+<br/>
+Here is a link to imagemagick <%= link_to "Railscasts", "http://railscasts.com/episodes/374-image-manipulation"  %>
+
