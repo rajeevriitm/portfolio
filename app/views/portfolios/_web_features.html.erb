@@ -5,12 +5,12 @@
 Deployment of website: The websites are deployed on Heroku.rails_12factor gem is used to serve static assets such as
 images and style sheets on Heroku.
 </li><li>
+Image uploading to Amazon S3. Carrier wave gem was used to upload images. CarrierWave's MiniMagik interface for ImageMagick
+was used for editing pictured before saving them. It was uploaded to Amazon S3 with the help of fog gem.
+</li><li>
 Database: Postgresql DBMS is used with pg gem.
 </li><li>
 Web-server: Puma is used  as the server which is capable of handling a large number of incoming requests in production.
-</li><li>
-Image uploading to Amazon S3. Carrier wave gem was used to upload images. CarrierWave's MiniMagik interface for ImageMagick
-was used for editing pictured before saving them. It was uploaded to Amazon S3 with the help of fog gem.
 </li><li>
 JQuery and pure javascripts are used extensively to handle Ajax requests and several user-friendly features. Different
 javascript gems like typeahead are also used .
