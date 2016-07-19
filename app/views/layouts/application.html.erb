@@ -11,7 +11,7 @@
 </head>
 <body>
   <%= render "layouts/header" %>
-  <div class= "main-body container">
+  <div class= "main-body container-fluid">
     <% flash.each do |message_type, message| %>
     <div class="alert alert-<%= message_type %> flash">
      <button type="button" class="close" data-dismiss="alert" aria-label="Close">

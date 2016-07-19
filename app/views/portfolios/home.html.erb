@@ -1,69 +1,43 @@
 <% provide :title, "Rajeev Ramakrishnan | Web Developer" %>
 <div class="row">
-  <div class="col-md-2">
-      <div class="anim blue-anim">
 
-  <%= image_tag("blue-final.png", :alt => "physics",
-   :width => 155, :height => 155, class: "moving_img") %>
-
-  <div id="physics">
-  <%= link_to(image_tag("physics.png", :alt => "physics",
-     :width => 155, :height => 155),"https://drive.google.com/file/d/0By7OpQ3kFDZOVG8zX0J5bF90ZVE/view?usp=sharing",target: "_blank") %>
+  <div class="col-md-3 ">
+    <figure class="com">
+      <%= link_to(image_tag("com5.png", :alt => "web development"),web_path) %>
+      <figcaption>Web Development</figcaption>
+    </figure>
   </div>
 
-
-    </div>
-
-      <figure class="blue">
-  <%= image_tag("blue-final.png", :alt => "physics",
-   :width => 155, :height => 155) %>
-   <figcaption class="blue_figcaption"> Past</figcaption>
-   </figure>
-  </div>
-  <div class="col-md-7 descriprion">
+  <div class="col-md-6 descriprion">
     <h3>Hi, I'm </h3>
     <div class="name">
       Rajeev
     </div>
     <div class="abilities">
 
-    <div class="web-developer">
-      Passionate Web-Developer
-    </div>
-    <div class="reader">
-      Avid Reader
-    </div>
-    <div class="physics">
-      Occasional Physicist
-    </div>
+      <div class="web-developer">
+        Passionate Web-Developer
+      </div>
+      <div class="reader">
+        Avid Reader
+      </div>
+      <div class="physics">
+        Occasional Physicist
+      </div>
     </div>
     <br/>
     <div class="quote" title="Into the Wild (Book by Jon Krakauer)">
-“According to moral absolutism, a challenge in which a successful outcome is
-    assured isn't a challenge at all.”</div>
-    <div class="choose">
-    choose one..
-    </div>
-  </div>
-
-
-  <div class="col-md-2">
-    <div class="anim red-anim">
-    <%= image_tag("red.png", :alt => "Web Development",
-   :width => 170, :height => 170,class: "moving_img") %>
-
-   <div id="web">
-   <%= link_to(image_tag("web.png", :alt => "Web-development",
-      :width => 155, :height => 155),web_path) %>
-   </div>
+      &ldquo; According to moral absolutism, a challenge in which a successful outcome is
+      assured isn't a challenge at all. &rdquo;</div>
     </div>
 
-  <figure class="red">
-    <%= image_tag("red.png", :alt => "Web Development",
-   :width => 170, :height => 170) %>
-    <figcaption class="red_figcaption"> Future </figcaption>
+
+    <div class="col-md-2 ">
+     <figure class="contact">
+      <%= link_to(image_tag("email.png", :alt => "Web-development"),"mailto: rajeevriitm@gmail.com") %>
+      <figcaption> Contact </figcaption>
     </figure>
-   </div>
 
   </div>
+</div>
 

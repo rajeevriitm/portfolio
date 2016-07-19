@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  caches_page :home,:web,:contact,:gallery
   def home
   end
   def web

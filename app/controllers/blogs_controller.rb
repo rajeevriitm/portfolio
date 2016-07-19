@@ -1,6 +1,7 @@
 class BlogsController < ApplicationController
   before_action :initial, only: [:edit,:update,:destroy,:show]
   before_action :admin, only: [:edit,:new]
+  caches_page :show,:index
   def new
     @blog=Blog.new
   end
@@ -8,13 +9,15 @@ class BlogsController < ApplicationController
   def create
     @blog=Blog.new(blog_params)
     if @blog.save
-      flash[:success]="saved"
+      expire_page action: "index"
       redirect_to @blog
     end
   end
 
   def destroy
     @blog.delete
+    expire_page action: "index"
+    expire_page action: "show", id: @blog.id
     redirect_to blogs_path
   end
 
@@ -23,9 +26,8 @@ class BlogsController < ApplicationController
   end
   def update
     if @blog.update_attributes(blog_params)
-      flash[:success]="done"
-    else
-      flash[:danger]="fail"
+      expire_page action: "index"
+      expire_page action: "show", id: @blog.id
     end
     redirect_to blogs_path
   end

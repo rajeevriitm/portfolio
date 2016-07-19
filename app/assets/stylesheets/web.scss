@@ -27,7 +27,14 @@
   td{
     font-size: 16px;
     padding: 5px;
-    color: #1E1F62;
+    &:last-child{
+      padding-left: 15px;
+      color: #181828;
+      font-family: 'Courier New', Courier, monospace;
+      // font-family: "Lucida Console", Monaco, monospace ;
+      font-weight: 600;
+      font-size: 17px;
+    }
   }
 }
 #div_projects{
@@ -104,8 +111,8 @@
     background: rgba(122,140,200,0.5);
     a{
 
-    color: #762557;
-    font-weight: 700;
+      color: #762557;
+      font-weight: 700;
     }
     span:first-child{
       float: left;
