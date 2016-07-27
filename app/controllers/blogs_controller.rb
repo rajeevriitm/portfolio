@@ -1,6 +1,7 @@
 class BlogsController < ApplicationController
   before_action :initial, only: [:edit,:update,:destroy,:show]
   before_action :admin, only: [:edit,:new]
+  before_action :set_meta,only: :show
   caches_page :show,:index
   def new
     @blog=Blog.new
@@ -49,4 +50,15 @@ class BlogsController < ApplicationController
   def admin
     redirect_to home_path unless params[:admin] == "raj"
   end
+  def set_meta
+    set_meta_tags description: @blog.title,
+    keywords: 'Freelance, web-developer, Ruby on Rails',
+    og: {
+      title:    @blog.title,
+      type:     'website',
+      url:      request.url,
+      image:    ActionController::Base.helpers.asset_path('zmanali-single.JPG')
+    }
+  end
+
 end

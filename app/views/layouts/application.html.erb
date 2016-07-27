@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield(:title)%></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= display_meta_tags site: "Rajeev Ramakrishnan" %>
+  <script src="dist/jquery.preloader.min.js"></script>
+  <title> <%= yield :title %></title>
   <link rel="shortcut icon" href="<%= image_path('myicon.ico')  %>" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= render "layouts/shim" %>
+  <%= render "layouts/analytics" %>
 </head>
 <body>
+  <div id="preloader">
+    <div id="preloader-inner">
+    </div>
+  </div>
   <%= render "layouts/header" %>
   <div class= "main-body container-fluid">
     <% flash.each do |message_type, message| %>
     <div class="alert alert-<%= message_type %> flash">
      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-       <span aria-hidden="true">&times;</span></button>
-       <%= message %>
-     </div>
-     <% end %>
-
-     <%= yield %>
-      <!-- <%= debug(params) if Rails.env.development? %> -->
+       <span aria-hidden="true">&times;</span>
+     </button>
+     <%= message %>
    </div>
- </body>
- </html>
+   <% end %>
+
+   <%= yield %>
+   <!-- <%= debug(params) if Rails.env.development? %> -->
+ </div>
+</body>
+</html>

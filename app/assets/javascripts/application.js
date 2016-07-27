@@ -17,4 +17,3 @@
 //= require fancybox
 //= require_tree .
 //= require turbolinks
-

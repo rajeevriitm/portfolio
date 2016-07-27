@@ -1,9 +1,11 @@
 
 #masthead {
   min-height:170px;
+  margin-left: 30px;
   .lead{
     font-size: 35px;
-    color:#C71717;
+    color:#89C7C6;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   }
 }
 
@@ -16,7 +18,7 @@
   font-size: 48px;
   line-height: 1;
   font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #251E6B;
+  color: #776FC5;
   font-style: italic;
 }
 
@@ -44,6 +46,9 @@
   color: #25A44C;
 }
 .blog-space{
+  a {
+    color: #5C1919;
+  }
   margin-top: -20px;
   background-color: rgba(250,250,250,0.6);
   padding: 30px;

@@ -2,10 +2,21 @@
 
 <div class="project_list">
 <ul class="recode">
-<%= image_tag asset_path('lafamos.png'),width: "30%",height: "30%" %>
+<%= link_to (image_tag asset_path('lafamos.png'),width: "30%",height: "30%"),"http://www.lafamos.com",target: "_blank" %>
 <div class="pro_det">
 <li>
-Full stack developer for a U.S. based startup - Recode360 .
+  <b>Stack: Rails , MySQL, Thin. Hosted on Heroku</b>
+</li>
+<li>
+Maintaining the website. Does feature additions, bug fixes and upgrades.
+</li>
+<li>
+LaFamos is a US entertainment PR and branding firm with a commitment to helping
+creative professionals take advantage of today's new digital era.
+</li>
+<li>
+Tasks: Migration from rails 3 to rails 4 , shift to 3rd party APIs like <b>Filestack</b> to reduce server load , developing
+internal tools to make certain tasks easier, etc..
 </li>
 </div>
 </ul>
@@ -14,35 +25,32 @@ Full stack developer for a U.S. based startup - Recode360 .
 
 <div class="project_list">
 <ul class="recode">
-warpello
+<%= image_tag(asset_path("trello.png"), class: "trello", width: "5%",height: "5%") %>
+<%= link_to "Warpello","http://warpello.herokuapp.com/", target: "_blank", class: "warpello" %>
 <div class="pro_det">
 <li>
-Full stack developer for a U.S. based startup - Recode360 .
+  <b>Stack: Rails , Postgres, WEBrick . Hosted on Heroku</b>
 </li>
+<li>A utility tool for Trello to automate certain tasks using <b>Trello API</b> and <b> webhooks</b> </li>
+<li>Warp tunnel: Create a tunnel between two boards to easily tansfer cards between them</li>
+<li>Time warp: Move cards between predefined lists according to its due date </li>
+<li>Auto assign: Assign users to cards according to its due date</li>
+<li>Auto sort: Create tasks for lists to sort cards  based on its due date and label them</li>
 </div>
 </ul>
 </div>
 
-<div class="project_list">
-<ul class="recode">
-portfolio
-<div class="pro_det">
-<li>
-Full stack developer for a U.S. based startup - Recode360 .
-</li>
-</div>
-</ul>
-</div>
 
 <div class="project_list">
 <ul class="recode">
-<%= image_tag asset_path('logo.png'),width: "20%",height: "20%" %>
+<%= image_tag asset_path('logo.png'),width: "25%",height: "25%" %>
 <div class="pro_det">
+<li><b>Stack: Rails, Postgres, Puma, Heroku</b></li>
 <li>
-Full stack developer for a U.S. based startup - Recode360 .
+Fullstack developer for a U.S. based startup - Recode360 .
 </li>
 <li>
-Worked on developing an E-commerce marketplace for vendors to sell variety of products.
+Developed an E-commerce marketplace for vendors to sell variety of products.
 </li>
 <li>
 E-commerce platform was created as a rails engine which can be integrated to any rails project.
@@ -52,7 +60,7 @@ A recipe publishing platform is developed (foodsy) through which both recipes an
 can be sold with a single click.
 </li>
 <li>
-Stripe connect is used for setting up the marketplace payment gateway and Stripe relay is used
+<b> Stripe </b> connect is used for setting up the marketplace payment gateway and Stripe relay is used
 for providing more platforms like twitter,pinterest to sell products.
 </li>
 </div>
@@ -61,8 +69,26 @@ for providing more platforms like twitter,pinterest to sell products.
 
 <div class="project_list">
 <ul class="recode">
-Backend developer for a banglore based educational startup, masterjis.com
+<%= image_tag(asset_path("com.png"), class: "trello", width: "5%",height: "5%") %>
+<%= link_to "Portfolio",root_path, target: "_blank", class: "warpello" %>
 <div class="pro_det">
+<li>
+<b>Stack: Rails, Postgres, Nginx, Puma, Amazon Web Service</b>
+</li>
+<li>Nginx webserver is used as a reverse proxy with Puma app server and is used to serve pages directly from the cache. <b> Capistrano </b> for deployment</li>
+<li>Designing tools such as <b> Fancy box </b>,<b> Font awesome </b> are used to make the design elegant</li>
+<li>Personal Blog is integrated into the page</li>
+</div>
+</ul>
+</div>
+
+
+<div class="project_list">
+<ul class="recode">
+<%= image_tag(asset_path("3.png"), class: "trello") %>
+<span class="warpello">masterjis.com</span>
+<div class="pro_det">
+<li><b>Stack: Rails, MySQL, Passenger, Heroku (Backend developer)</b></li>
 <li>
 Masterjis provides a platform for students and educational institutes to connect and share
 information about different courses and its opportunities.

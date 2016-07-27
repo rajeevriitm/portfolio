@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   get 'contact' , to: 'portfolios#contact'
   post 'email', to: 'portfolios#email'
   get 'gallery', to: "portfolios#gallery"
-  get 'hobbies',to: 'portfolios#hobbies'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

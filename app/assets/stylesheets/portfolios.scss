@@ -74,20 +74,18 @@ body {
   outline:0;
 }
 .descriprion{
-  background: rgba(250, 206, 206, 0.5);
+  background: rgba(255, 255, 250, 0.6);
   text-align: center;
   margin: 0 30px ;
   padding-top: 20px;
   padding-bottom: 50px;
   border-radius: 20px;
-  border: 2px solid white;
+  border: 3px solid black;
 }
 h3{
  font-family: 'Courier New', Courier, monospace;
- // color: #630F1E;
  font-size: 40px;
  text-align: center;
-  // font-weight: bold;
 }
 .name{
   padding: 20px;
@@ -107,16 +105,13 @@ h3{
   font-weight: 500;
 }
 .quote{
-  .motto{
-    // color: ;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-decoration: underline;
-  }
   margin-top: 10px;
+  padding-top: 5px;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 21px;
-  color: #630F1E;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 19px;
+  line-height: 21px;
+  color: #DB2626;
 }
 figure{
   position: relative;
@@ -154,7 +149,7 @@ figure.com {
   }
   figcaption{
     color:#1D57E8;
-    margin-left: -30px;
+    margin-left: -40px;
     margin-top:5px;
   }
 }
@@ -176,8 +171,8 @@ figure.contact{
     width:133px;
   }
   figcaption{
-    text-align: center;
+    text-align: left;
     color: #1BAA24;
-    margin-left: -15px;
+    margin-left: 25px;
   }
 }
