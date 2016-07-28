@@ -36,10 +36,10 @@
 // });
 
 
-var ready;
-ready = function() {
-   $('#preloader').fadeOut("slow");
-};
+// var ready;
+// ready = function() {
+//    $('#preloader').fadeOut("slow");
+// };
 
-$(document).ready(ready);
-$(document).on('page:load', ready);
+// $(document).ready(ready);
+// $(document).on('page:load', ready);

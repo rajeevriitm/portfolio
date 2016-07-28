@@ -1,6 +1,9 @@
 class PortfoliosController < ApplicationController
   caches_page :home,:web,:contact,:gallery
   before_action :set_meta
+  def intro
+    render layout: 'preload'
+  end
   def home
   end
   def web

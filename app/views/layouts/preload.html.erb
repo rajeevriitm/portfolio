@@ -11,20 +11,15 @@
   <%= render "layouts/shim" %>
   <%= render "layouts/analytics" %>
 </head>
-<body class="real">
-  <%= render "layouts/header" %>
-  <div class= "main-body container-fluid">
-    <% flash.each do |message_type, message| %>
-    <div class="alert alert-<%= message_type %> flash">
-     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-       <span aria-hidden="true">&times;</span>
-     </button>
-     <%= message %>
-   </div>
-   <% end %>
+<body class="preload">
+  <%= yield %>
 
-   <%= yield %>
-   <!-- <%= debug(params) if Rails.env.development? %> -->
- </div>
+  <script type="text/javascript">
+    $.get('home',function(data,status){
+        document.write(data);
+        document.close();
+    })
+  </script>
+
 </body>
 </html>
