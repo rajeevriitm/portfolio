@@ -17,5 +17,4 @@
 /tmp
 /public/*
 /config/environments/development.rb
-/config/secrets.yml
 /config/application.yml
