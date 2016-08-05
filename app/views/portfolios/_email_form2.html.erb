@@ -4,27 +4,27 @@
   <div class="form-group">
     <div class="col-md-10 col-md-offset-1">
 
-      <%= text_field_tag :name ,nil,placeholder: "Name", class: "form-control" %>
+      <%= text_field_tag :name ,nil,placeholder: "Name", class: "form-control",required: true %>
     </div>
   </div>
 
   <div class="form-group">
     <div class="col-md-10 col-md-offset-1">
 
-      <%= email_field_tag :email ,nil,placeholder: "Email address", class: "form-control" %>
+      <%= email_field_tag :email ,nil,placeholder: "Email address", class: "form-control",required: true %>
     </div>
   </div>
   <div class="form-group">
     <div class="col-md-10 col-md-offset-1">
 
-      <%= text_field_tag :subject ,nil,placeholder: "Subject", class: "form-control" %>
+      <%= text_field_tag :subject ,nil,placeholder: "Subject", class: "form-control",required: true %>
     </div>
   </div>
 
   <div class="form-group">
     <div class="col-md-10 col-md-offset-1">
 
-    <%= text_area_tag :message ,nil,class: "form-control", placeholder:"Enter your massage here. ", rows: "7" %>
+    <%= text_area_tag :message ,nil,class: "form-control", placeholder:"Enter your massage here. ", rows: "7",required: true %>
     </div>
   </div>
 
