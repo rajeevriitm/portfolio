@@ -83,7 +83,7 @@ body.preload{
   padding-top: 20px;
   padding-bottom: 50px;
   border-radius: 20px;
-  border: 3px solid black;
+  border: 1px solid black;
 }
 h3{
  font-family: 'Courier New', Courier, monospace;
@@ -137,32 +137,33 @@ figure{
 }
 figure.com {
   padding-left: 80px;
-  top: 210px;
+  top: 240px;
   img{
-    height: 155px;
-    width: 135px;
+    height: 130px;
+    width: 110px;
     -webkit-transition: all 75ms ease-in;
     -moz-transition: all 75ms ease-in;
     -ms-transition: all 75ms ease-in;
     transition: all 75ms ease-in;
   }
   img:hover{
-    height:158px;
-    width: 138px;
+    height:133px;
+    width: 113px;
   }
   figcaption{
     color:#1D57E8;
     margin-left: -40px;
     margin-top:5px;
+    font-size: 20px;
   }
 }
 figure.contact{
   padding-left: 50px;
   padding-top: 40px;
-  top: 195px;
+  top: 220px;
   img{
-    height: 130px;
-    width: 130px;
+    height: 110px;
+    width: 110px;
     -webkit-transition: all 75ms ease-in;
     -moz-transition: all 75ms ease-in;
     -ms-transition: all 75ms ease-in;
@@ -170,45 +171,47 @@ figure.contact{
 
   }
   img:hover{
-    height: 133px;
-    width:133px;
+    height: 113px;
+    width:113px;
   }
   figcaption{
     text-align: left;
     color: #1BAA24;
     margin-left: 25px;
+    font-size: 20px;
+
   }
 }
 
 
 
 .real {
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
